@@ -10,8 +10,10 @@
   },
   "scripts": {
     "tarea": "gulp tarea",
-    "dev": "gulp-dev",
-    "sass": "sass --watch src/scss:build/css"
+    "dev": "gulp dev",
+    "sass": "sass --watch src/scss:build/css",
+    "js": "gulp js",
+    "watchJs": "gulp watchJs"
   },
   "keywords": [
     "sass",

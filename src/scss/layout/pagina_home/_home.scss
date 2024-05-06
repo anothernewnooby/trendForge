@@ -1,0 +1,124 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra_lateral{
+    background-color: v.$gris;
+    width: 32.5rem;
+    height: 100vh;
+
+    .separador_superior,
+    .separador_inferior{
+        width: 75%;
+        height: 0.1rem;
+        background-color: v.$blanco;
+    }
+
+    .logo{
+        width: 100%;
+        height: 20rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contenedor_logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 3rem;
+
+        h1{
+            font-family: v.$fuenteTitulo;
+            color: v.$blanco;
+            font-size: 6rem;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            font-family: v.$fuentePrinciapl;
+            color: v.$blanco;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.contenedor_menu{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+
+    .menu{
+        font-family: v.$fuentePrinciapl;
+        font-size: 3rem;
+        color: v.$blanco;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .menu_links{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+
+        width: 100%;
+
+        a {
+            text-decoration: none;
+            color: v.$blanco;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            padding-left: 4rem;
+            width: 100%;
+            height: 3.5rem;
+            display: flex; // Añade esto
+            align-items: center; // Añade esto
+        }
+        
+        a:hover {
+            color: v.$negro;
+            width: 100%;
+            height: 3.5rem;
+            background-color: v.$blanco;
+            transition: background-color 0.4s, color 0.4s;
+        }
+    }
+}
+
+.cerrar{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-size: 1rem;
+    color: v.$blanco;
+    cursor: pointer;
+    margin-top: 9rem;
+    margin-left: rem;
+
+    p{
+        font-size: 1.5rem;
+    }
+
+    &:hover{
+        color: red;
+        transition: color 0.4s;
+    }
+}

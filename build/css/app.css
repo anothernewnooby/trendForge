@@ -449,3 +449,122 @@ img {
   color: #EEEEF2;
   text-decoration: none;
 }
+
+.contenedor2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #151515;
+  color: #EEEEF2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contenedor {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barra_lateral {
+  background-color: #262626;
+  width: 32.5rem;
+  height: 100vh;
+}
+.barra_lateral .separador_superior,
+.barra_lateral .separador_inferior {
+  width: 75%;
+  height: 0.1rem;
+  background-color: #EEEEF2;
+}
+.barra_lateral .logo {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.barra_lateral .contenedor_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+.barra_lateral .contenedor_logo h1 {
+  font-family: "Great Vibes", cursive;
+  color: #EEEEF2;
+  font-size: 6rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.barra_lateral .contenedor_logo p {
+  font-family: "Outfit", sans-serif;
+  color: #EEEEF2;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contenedor_menu {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+.contenedor_menu .menu {
+  font-family: "Outfit", sans-serif;
+  font-size: 3rem;
+  color: #EEEEF2;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.contenedor_menu .menu_links {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+}
+.contenedor_menu .menu_links a {
+  text-decoration: none;
+  color: #EEEEF2;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  padding-left: 4rem;
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+.contenedor_menu .menu_links a:hover {
+  color: #151515;
+  width: 100%;
+  height: 3.5rem;
+  background-color: #EEEEF2;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.cerrar {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  font-size: 1rem;
+  color: #EEEEF2;
+  cursor: pointer;
+  margin-top: 9rem;
+  margin-left: rem;
+}
+.cerrar p {
+  font-size: 1.5rem;
+}
+.cerrar:hover {
+  color: red;
+  transition: color 0.4s;
+}

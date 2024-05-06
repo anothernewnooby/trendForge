@@ -1,7 +1,7 @@
-const { src, dest, watch } = require('gulp');
+// gulpfile.js
+const { src, dest, watch, parallel } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 
-//! Función para compilar Sass a CSS y generar app.css
 function css( done ){
     return src('src/scss/**/*.scss')
         .pipe(sass())
@@ -9,11 +9,17 @@ function css( done ){
         .on('end', done);
 }
 
-//! Función para observar cambios en los archivos Sass
-function dev(){
-    watch('src/scss/**/*.scss', css);
+function js(done) {
+    return src('src/javascript/**/*.js') // Actualiza esta línea
+        .pipe(dest('build/js'))
+        .on('end', done);
 }
 
-//! Exportación de las tareas
-exports.css = css;
+function watchFiles() {
+    watch('src/scss/**/*.scss', css);
+    watch('src/javascript/**/*.js', js); // Y esta línea
+}
+
+const dev = parallel(css, js, watchFiles);
+
 exports.dev = dev;
