@@ -1,0 +1,23 @@
+{
+  "name": "proj_rontgen",
+  "version": "1.0.0",
+  "description": "pagina radiografias eutm",
+  "main": "index.js",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.72.0"
+  },
+  "scripts": {
+    "tarea": "gulp tarea",
+    "dev": "gulp-dev",
+    "sass": "sass --watch src/scss:build/css"
+  },
+  "keywords": [
+    "sass",
+    "gulp",
+    "proj_rontgen"
+  ],
+  "author": "DM",
+  "license": "ISC"
+}

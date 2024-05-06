@@ -1,0 +1,43 @@
+@use 'variables' as v;
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-padding-top: 0rem;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    font-size: 1.6rem;
+}
+
+body{
+    //font-family: v.$fuentePrincipal;
+    overflow: hidden;
+    padding-top: 0;
+}
+
+h1{
+    margin: 0 auto;
+}
+
+p{
+    font-size: 2rem;
+    //color: ;
+    line-height: 1.5rem;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
