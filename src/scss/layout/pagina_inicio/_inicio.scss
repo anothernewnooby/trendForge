@@ -18,6 +18,11 @@
     font-size: 6rem;
     text-align: center;
     margin-bottom: 1rem;
+
+    @media(max-width: 767px){
+        font-size: 3.8rem;
+    
+    }
 }
 
 .contenedor_login{
