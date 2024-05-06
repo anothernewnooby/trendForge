@@ -35,6 +35,13 @@
     text-align: center;
     margin-bottom: 1rem;
 
+    p{
+        font-family: v.$fuentePrinciapl;
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
     @media(max-width: 767px){
         font-size: 3.8rem;
     
